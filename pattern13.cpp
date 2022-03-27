@@ -2,15 +2,14 @@
 using namespace std;
 int main(){
 
-    char n;
+    int n;
     cin >> n;
-    char i = 'A';
+    int i = 1;
     while(i<=n){
-        char j = 'A';
-        while(j<=n){
-            cout << j;
+        int j = 1;
+        while(j<=i){
+            cout << char(64+n - i + j);
             j++;
-
         }
         cout << endl;
         i++;

@@ -2,17 +2,18 @@
 using namespace std;
 int main(){
 
-    char n;
+    int n;
     cin >> n;
-    char i = 'A';
+    int i = 1;
     while(i<=n){
-        char j = 'A';
+        int j = 1;
         while(j<=n){
-            cout << j;
+            cout <<char(64+ i + j - 1);
             j++;
-
         }
         cout << endl;
         i++;
+
     }
+    
 }
