@@ -2,12 +2,18 @@
 using namespace std;
 
 int main(){
+    bool isprime = 1;
     int n;
     cin >> n;
     for (int i = 2; i < n;i++){
         if(n%i==0){
-            cout << "not a prime number";
+            
+            isprime = 0;
             break;
         }
+    }
+    if(isprime==0)cout << "not a prime number";
+    else{
+        cout << "prime number";
     }
 }
