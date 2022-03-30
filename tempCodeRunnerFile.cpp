@@ -1,0 +1,1 @@
+ leftrotate(arr, 3);
